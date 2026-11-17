@@ -1,7 +1,7 @@
 # KẾ HOẠCH KIỂM THỬ (TEST PLAN)
 
 * **Dự án:** Website Quản Lý Sản Phẩm
-* **Sinh viên:** Nguyễn Đăng Thuận – TV00428 – SD21308
+* **Sinh viên:** Nguyễn Đông Thuận – TV00428 – SD21308
 * **Tài liệu tham chiếu:** `docs/SPECIFICATIONS.md`, `docs/TEST_CASES.md`
 
 ---
