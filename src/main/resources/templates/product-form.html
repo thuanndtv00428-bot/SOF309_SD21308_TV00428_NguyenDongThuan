@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="vi" xmlns:th="http://www.thymeleaf.org">
+<head><meta charset="UTF-8"><title>Form sản phẩm</title><link rel="stylesheet" th:href="@{/css/style.css}"></head>
+<body>
+<h1 th:text="${product.id == 0} ? 'Thêm sản phẩm' : 'Sửa sản phẩm'"></h1>
+<div id="error-message" class="error" th:if="${errors}"><div th:each="e : ${errors}" th:text="${e}"></div></div>
+<form method="post" th:action="@{/products/save}">
+  <input type="hidden" name="id" th:value="${product.id}">
+  <div><label for="name">Tên sản phẩm</label><input type="text" id="name" name="name" th:value="${product.name}"></div>
+  <div><label for="price">Giá bán</label><input type="text" id="price" name="price" th:value="${product.price}"></div>
+  <div><label for="quantity">Số lượng</label><input type="text" id="quantity" name="quantity" th:value="${product.quantity}"></div>
+  <button type="submit" id="btn-save">Lưu</button>
+  <a class="btn" th:href="@{/products}">Hủy</a>
+</form>
+</body></html>

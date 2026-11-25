@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="vi" xmlns:th="http://www.thymeleaf.org">
+<head><meta charset="UTF-8"><title>Đăng ký</title><link rel="stylesheet" th:href="@{/css/style.css}"></head>
+<body>
+<h1>Đăng ký tài khoản</h1>
+<div id="error-message" class="error" th:if="${errors}"><div th:each="e : ${errors}" th:text="${e}"></div></div>
+<form method="post" th:action="@{/register}">
+  <div><label for="username">Username</label><input type="text" id="username" name="username"></div>
+  <div><label for="email">Email</label><input type="text" id="email" name="email"></div>
+  <div><label for="password">Mật khẩu</label><input type="password" id="password" name="password"></div>
+  <div><label for="confirmPassword">Nhập lại mật khẩu</label><input type="password" id="confirmPassword" name="confirmPassword"></div>
+  <button type="submit" id="btn-register">Đăng ký</button>
+</form>
+<p><a th:href="@{/login}">Quay lại đăng nhập</a></p>
+</body></html>

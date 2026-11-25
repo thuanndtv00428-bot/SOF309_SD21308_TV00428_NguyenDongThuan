@@ -1,0 +1,8 @@
+<!DOCTYPE html>
+<html lang="vi" xmlns:th="http://www.thymeleaf.org">
+<head><meta charset="UTF-8"><title>Trang chủ</title><link rel="stylesheet" th:href="@{/css/style.css}"></head>
+<body>
+<h1>Trang chủ</h1>
+<p>Xin chào, <b id="welcome-user" th:text="${user}"></b>!</p>
+<nav><a id="link-products" th:href="@{/products}">Quản lý sản phẩm</a><a id="link-logout" th:href="@{/logout}">Đăng xuất</a></nav>
+</body></html>
